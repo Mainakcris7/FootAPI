@@ -1,0 +1,39 @@
+:root{
+    --nav-hover-line-color: rgb(100, 0, 249);
+    --header-footer-bg-color: rgb(37, 36, 36);
+}
+body{
+    background-color: rgb(27, 26, 26);
+    color: whitesmoke;
+    overflow-x: hidden;
+}
+#root{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight: 500;
+}
+input, textarea{
+    background-color: rgb(27, 27, 27) !important;
+    color: white !important;
+    border: 1px solid var(--nav-hover-line-color) !important;
+}
+div.password{
+    position: relative;
+}
+div.password > button.password-hide-btn{
+    right: 5px;
+    top: 5px;
+    position: absolute;
+}
+@media screen and (max-width: 960px) {
+    div.container{
+        width: 100vw !important;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

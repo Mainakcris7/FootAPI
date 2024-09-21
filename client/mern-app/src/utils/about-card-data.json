@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Player Information",
+        "content": "Access data like player names, nationalities, clubs, positions, goals, assists, and more.",
+        "color": "#f00a5a" 
+    },
+    {
+        "title": "Customizable Responses",
+        "content": "Use optional parameters to sort, filter, and limit the data returned to meet your exact requirements.",
+        "color": "#0a80f0"
+    },
+    {
+        "title": "Simple API Key Access",
+        "content": "Use optional parameters to sort, filter, and limit the data returned to meet your exact requirements.",
+        "color": "#04bf49"
+    },
+    {
+        "title": "Up-to-date Data",
+        "content": "We strive to keep the player information current, with regular updates to reflect recent transfers and stats.",
+        "color": "#790af0"
+    }
+
+]

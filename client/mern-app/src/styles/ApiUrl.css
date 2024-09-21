@@ -1,0 +1,31 @@
+span.method{
+    padding: 0.25rem 0.5rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+div.show-url{
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    color: rgb(243, 243, 211);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(58, 57, 61);
+    font-family: "Fira Code", monospace;
+    overflow-x: auto;
+}
+span.url{
+    /* overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-word;
+    word-break: break-word; */
+    white-space: nowrap;
+}
+span.copy_icon{
+    display: block;
+    margin-left: auto;
+}
+

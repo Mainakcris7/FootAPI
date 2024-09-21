@@ -1,0 +1,57 @@
+div.docs{
+    width: 80%;
+    min-height: 70vh;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+span#api-doc-title{
+    text-align: justify;
+}
+span.margin-2{
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+div.endpoints{
+    width: 100%;
+}
+div.api-urls{
+    margin-top: 0.5rem;
+    width: 100%;
+}
+span.highlight{
+    background-color: rgb(58, 57, 61);
+    font-family: "Fira Code", monospace;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+h2{
+    margin-bottom: 0;
+}
+h3{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+div.optional-params{
+    margin-top: 1.5rem;
+}
+div.optional-param{
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+    div.docs{
+        width: 92%;
+        padding: 0.25rem;
+        overflow: hidden;
+    }
+    div.docs span, div.docs p{
+        text-align: justify;
+    }
+}

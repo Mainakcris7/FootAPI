@@ -1,0 +1,40 @@
+div.register-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    min-height: 50vh;
+    flex-wrap: wrap;
+}
+
+div.register-banner{
+    width: 35%;
+}
+div.register-banner > img{
+    width: 100%;
+}
+
+div.register-form{
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+    div.register-container{
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    div.register-banner{
+        margin-top: 1rem;
+        width: 90%;
+    }
+    div.register-form{
+        margin-left: 0;
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,58 @@
+div.about{
+    width: 80%;
+    min-height: 70vh;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+h3{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+div.about > p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+div.cards{
+    margin-top: 1rem;
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+div.features{
+    width: 100%;
+}
+span.highlight{
+    background-color: rgb(58, 57, 61);
+    font-family: "Fira Code", monospace;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+ul li{
+    margin-top: 0.8rem;
+}
+
+
+@media screen and (max-width: 960px) {
+    div.about{
+        width: 92%;
+        overflow: hidden;
+        padding: 0.25rem;
+    }
+    div.container{
+        padding: 0 !important;
+    }
+    div.about > p{
+        font-size: 1rem;
+    }
+    div.cards{
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}

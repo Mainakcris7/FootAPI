@@ -1,0 +1,6 @@
+footer{
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 500;
+    background-color: var(--header-footer-bg-color);
+}

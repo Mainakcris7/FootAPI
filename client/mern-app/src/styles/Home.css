@@ -1,0 +1,107 @@
+
+div.home-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-around;
+    width: 80%;
+    flex-wrap: wrap-reverse;
+}
+img#home-logo{
+    height: 60vh;
+}
+
+div.key-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 60vh;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+div#api-key-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    justify-content: center;
+    position: relative;
+}
+div#api-icons, div#api-icons-home{
+    display: flex;
+    position: absolute;
+    right: 6px;
+    bottom: 4px;
+}
+div#api-icons-home{
+    bottom: 10px;
+}
+
+div#api-key, div#api-key-home{
+    padding: 0.75rem 5rem 0.75rem 1rem;
+    width: min-content;
+    font-family: "Fira Code", monospace;
+    border-radius: 10px;
+    white-space: nowrap;
+    align-self: center;
+    position: relative;
+    margin: 0;
+    background-color: rgb(52, 51, 51);
+}
+div#api-key-home{
+    position: relative;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+}
+button.btn-started{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* MOBILE  */
+@media screen and (max-width: 960px) {
+    div.home-container{
+        width: 100%;
+    }
+    h1{
+        font-size: clamp(1.5rem, 20vw, 2.2rem);
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    div.key-holder{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    div.apiKey-div{
+        margin-top: 0.8rem;
+    }
+    
+    div#api-key-home{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    div.key-holder{
+        height: max-content;
+    }
+    div#api-key-container{
+        margin-top: 0;
+    }
+    img#home-logo{
+        margin-top: 1rem;
+        height: clamp(250px, 45vh, 400px);
+    }
+}

@@ -1,0 +1,148 @@
+
+div.nav{
+    width: 100vw;
+    display: flex;
+    padding: 1.2rem 7rem;
+    position:sticky;
+    z-index: 100;
+    top: 0;
+    background-color: var(--header-footer-bg-color);
+}
+div.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.logo div#logo-container{
+    height: 35px;
+    aspect-ratio: 1/1;
+}
+div#logo-container img#logo{
+    width: 100%;
+}
+a#logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.35rem 0.65rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+a#logo-link:hover{
+    background-color: rgba(240, 248, 255, 0.064);
+}
+div.logo > h2{
+    margin-left: 0.85rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+ul.nav-ul{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-bottom: 0;
+}
+div.menus{
+    margin-left: auto;
+    display: flex;
+}
+div.menus li{
+    margin-left: 2rem;
+    margin-top: 0;
+    list-style: none;
+}
+div.menus li a{
+    text-decoration: none;
+    color: whitesmoke;
+    position: relative;
+}
+div.menus li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--nav-hover-line-color);
+    transition: all 0.2s ease-in;
+}
+div.menus li a.active{
+    font-weight: bold;
+}
+div.menus li a.active::after{
+    width: 100%;
+}
+div.menus li a:hover:not(a.active)::after{
+    width: 100%;
+}
+
+/* MOBILE  */
+div.nav-mobile{
+    position: absolute;
+    display: none;
+    /* outline: 1px solid red; */
+}
+div.nav-mobile > ul{
+    position: absolute;
+    transition: all 0.15s ease-in;
+    opacity: 0;
+    transform: translateX(-100px);
+    /* outline: 1px solid red; */
+    background-color: rgb(34, 33, 33);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0;
+}
+div.nav-mobile > ul.show-mobile-menus{
+    opacity: 1;
+    transform: translateX(-0.6rem);
+}
+div.hamburger-icon button{
+    transition: all 0.2s ease-out;
+}
+button.active-hamburger{
+    transform: rotate(-90deg);
+}
+div.nav-mobile > ul > li{
+    /* outline: 1px solid yellow; */
+    list-style: none;
+    width: 10rem;
+    margin: 0;
+}
+div.nav-mobile > ul > li > a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 2.5rem;
+    width: 100%;
+    color: white;
+}
+div.nav-mobile > ul > li > a.active{
+    font-weight: bold;
+    background-color: rgba(100, 0, 249, 0.4);
+    border-right: 5px solid var(--nav-hover-line-color);
+}
+
+@media (max-width: 768px){
+    div.nav-mobile{
+        display: block;
+        order: -1;
+        position: relative;
+    }
+    a#logo-link{
+        padding: 0;
+    }
+    div.logo div#logo-container{
+        height: 1.75rem;
+    }
+    div.logo h2{
+        font-size: 1.2rem;
+        margin-left: 0.35rem;
+    }
+    div.nav{
+        padding: 0.5rem !important;
+    }
+    ul.nav-ul{
+        display: none;
+    }
+}

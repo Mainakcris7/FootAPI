@@ -1,0 +1,43 @@
+div.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 92%;
+    min-height: 50vh;
+    flex-wrap: wrap;
+}
+
+div.contact-banner{
+    display: grid;
+    place-content: center;
+    width: 40%;
+
+}
+div.contact-banner > img{
+    width: 100%;
+}
+
+div.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 2rem;
+}
+
+.btn-login, .btn-register{
+    background-color: var(--nav-hover-line-color) !important;
+    &:hover{
+        background-color: rgb(114, 23, 250) !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    div.contact-banner{
+        width: 95%;
+    }
+    div.contact-form{
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

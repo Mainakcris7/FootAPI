@@ -1,0 +1,48 @@
+div.login-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    min-height: 50vh;
+}
+
+div.login-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+div.login-banner > img{
+    width: 100%;
+}
+
+div.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 2rem;
+}
+
+.btn-login, .btn-register{
+    background-color: var(--nav-hover-line-color) !important;
+    &:hover{
+        background-color: rgb(114, 23, 250) !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    div.login-container{
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    div.login-banner{
+        margin-top: 1rem;
+        width: 95%;
+    }
+    div.login-form{
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

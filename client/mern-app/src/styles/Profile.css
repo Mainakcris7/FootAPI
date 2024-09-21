@@ -1,0 +1,44 @@
+div.profile{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+div.profile > div.profile-banner{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.profile-banner img{
+    width: 80%;
+}
+div.user-details{
+    display: flex;
+    flex-direction: column;
+}
+div.btn-group{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem !important;
+}
+div.btn-group > button{
+    width: min-content;
+}
+
+@media screen and (max-width: 960px) {
+    div#api-key{
+        font-size: 0.8rem;
+    }
+    div.profile-banner{
+        width: clamp(250px, 82%, 500px) !important;
+    }
+    div.user-details{
+        margin-bottom: 1rem;
+    }
+}
