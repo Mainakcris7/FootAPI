@@ -44,7 +44,7 @@ To access the API, you need to register to receive an API key. Once you have you
 You must include your API key in your requests. The API key should be passed as a query parameter like so: 
 
 ```bash
-https://footapi-mainak.onrender.com/api/v1/data?apiKey=YOUR_API_KEY
+https://footapi-backend.onrender.com/api/v1/data?apiKey=YOUR_API_KEY
 ```
 
 ## Optional Query Parameters
