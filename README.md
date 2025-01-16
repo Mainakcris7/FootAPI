@@ -1,4 +1,4 @@
-# FootAPI (v1.0.0)
+# FootAPI (v1.1.0)
 
 Welcome to the **FootAPI** ⚽!. This public API provides information on various football players, including their names, the teams they played for, nationality, and career stats like goals scored.
 
